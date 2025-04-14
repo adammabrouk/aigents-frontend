@@ -1,6 +1,7 @@
 import HeroSection from './components/HeroSection'
 import WhatWeDeliver from './components/WhatWeDeliver'
 import WhatMakesUsStandOut from './components/WhatMakesUsStandOut'
+import StackTools from './components/StackTools'
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <HeroSection />
       <WhatWeDeliver />
       <WhatMakesUsStandOut />
+      <StackTools />
     </div>
   )
 }
