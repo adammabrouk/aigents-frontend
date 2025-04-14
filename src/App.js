@@ -3,6 +3,7 @@ import WhatWeDeliver from './components/WhatWeDeliver'
 import WhatMakesUsStandOut from './components/WhatMakesUsStandOut'
 import StackTools from './components/StackTools'
 import FounderMessage from './components/FounderMessage'
+import ContactCTA from './components/ContactCTA'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <WhatMakesUsStandOut />
       <StackTools />
       <FounderMessage />
+      <ContactCTA />
     </div>
   )
 }

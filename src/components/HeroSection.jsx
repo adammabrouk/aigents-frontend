@@ -4,6 +4,7 @@ import NodeSphere from '../three/NodeSphere'
 export default function HeroSection() {
   return (
     <section className="relative h-screen w-full flex items-center justify-center overflow-hidden text-white bg-dark">
+      {/* 3D Background */}
       <Canvas
         className="absolute inset-0 z-0"
         camera={{ position: [0, 0, 10], fov: 75 }}
@@ -14,7 +15,10 @@ export default function HeroSection() {
         <NodeSphere />
       </Canvas>
 
+      {/* Hero Content */}
       <div className="relative z-10 text-center max-w-3xl px-4">
+        {/* Logo Above Headline */}
+
         <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight">
           Multi-Agent Intelligence.
           <br />
@@ -31,10 +35,6 @@ export default function HeroSection() {
             Watch Demo
           </button>
         </div>
-      </div>
-
-      <div className="absolute top-4 left-6 z-10 text-primary text-xl font-bold tracking-wide">
-        AiGents
       </div>
     </section>
   )
