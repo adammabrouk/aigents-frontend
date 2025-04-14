@@ -2,6 +2,7 @@ import HeroSection from './components/HeroSection'
 import WhatWeDeliver from './components/WhatWeDeliver'
 import WhatMakesUsStandOut from './components/WhatMakesUsStandOut'
 import StackTools from './components/StackTools'
+import FounderMessage from './components/FounderMessage'
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <WhatWeDeliver />
       <WhatMakesUsStandOut />
       <StackTools />
+      <FounderMessage />
     </div>
   )
 }
