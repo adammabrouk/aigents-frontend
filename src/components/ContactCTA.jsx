@@ -20,12 +20,6 @@ export default function ContactCTA() {
             <FaPaperPlane />
             Book a Meeting
           </a>
-          <a
-            href="mailto:you@example.com"
-            className="text-sm text-gray-400 hover:text-primary underline transition"
-          >
-            Or email us directly
-          </a>
         </div>
       </div>
     </section>

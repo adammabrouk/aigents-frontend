@@ -12,7 +12,7 @@ export default function NodeSphere() {
   const geometry = useMemo(() => {
     const geo = new THREE.BufferGeometry()
     const vertices = []
-    const radius = 3.2
+    const radius = 5.2
 
     for (let i = 0; i < 3000; i++) {
       const phi = Math.acos(2 * Math.random() - 1)
@@ -51,7 +51,7 @@ export default function NodeSphere() {
 
       {/* Centered 3D logo plane (bigger) */}
       <mesh position={[0, 0, 0]}>
-        <planeGeometry args={[5, 5]} />
+        <planeGeometry args={[7, 7]} />
         <meshBasicMaterial map={logoTexture} transparent />
       </mesh>
     </>

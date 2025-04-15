@@ -3,24 +3,21 @@ import NodeSphere from '../three/NodeSphere'
 
 export default function HeroSection() {
   return (
-    <section className="relative h-screen w-full flex items-center justify-center overflow-hidden text-white bg-dark">
-      {/* 3D Background */}
-      <Canvas
-        className="absolute inset-0 z-0"
-        camera={{ position: [0, 0, 10], fov: 75 }}
-        style={{ background: '#0B0F14' }}
-      >
-        <color attach="background" args={['#0B0F14']} />
-        <ambientLight intensity={0.5} />
-        <pointLight position={[10, 10, 10]} />
-        <NodeSphere />
-      </Canvas>
+    <section className="relative min-h-screen w-full overflow-hidden text-white bg-dark px-6 py-12 flex flex-col sm:flex-row items-center justify-center gap-12">
+      
+      {/* 3D Sphere Section */}
+      <div className="w-full sm:w-[45%] max-w-md aspect-square">
+        <Canvas camera={{ position: [0, 0, 10], fov: 75 }}>
+          <color attach="background" args={['#0B0F14']} />
+          <ambientLight intensity={0.5} />
+          <pointLight position={[10, 10, 10]} />
+          <NodeSphere />
+        </Canvas>
+      </div>
 
-      {/* Hero Content */}
-      <div className="relative z-10 text-center max-w-3xl px-4">
-        {/* Logo Above Headline */}
-
-        <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight">
+      {/* Text & CTA Section */}
+      <div className="relative z-10 w-full sm:w-1/2 max-w-xl text-center sm:text-left">
+        <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">
           Multi-Agent Intelligence.
           <br />
           <span className="text-primary">Automated for Your Business.</span>
@@ -28,13 +25,21 @@ export default function HeroSection() {
         <p className="text-gray-300 mb-8 text-lg">
           We replace outdated workflows with intelligent, real-time agents that adapt and evolve.
         </p>
-        <div className="flex justify-center gap-4">
-          <button className="px-6 py-3 bg-primary rounded-xl text-black font-semibold shadow-md hover:drop-shadow-glow transition">
+        <div className="flex justify-center sm:justify-start gap-4">
+          <a
+            href="https://calendly.com/mabrouk-adam/prise-de-contact"
+            className="px-6 py-3 bg-primary rounded-xl text-black font-semibold shadow-md hover:drop-shadow-glow transition"
+          >
             Let’s Talk
-          </button>
-          <button className="px-6 py-3 border border-white rounded-xl text-white hover:border-primary hover:text-primary transition">
-            Watch Demo
-          </button>
+          </a>
+          <a
+            href="https://calendly.com/mabrouk-adam/demo"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-6 py-3 border border-white rounded-xl text-white hover:border-primary hover:text-primary transition"
+          >
+            Plan a Demo
+          </a>
         </div>
       </div>
     </section>
