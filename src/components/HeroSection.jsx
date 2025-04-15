@@ -10,6 +10,7 @@ export default function HeroSection() {
         camera={{ position: [0, 0, 10], fov: 75 }}
         style={{ background: '#0B0F14' }}
       >
+        <color attach="background" args={['#0B0F14']} />
         <ambientLight intensity={0.5} />
         <pointLight position={[10, 10, 10]} />
         <NodeSphere />
