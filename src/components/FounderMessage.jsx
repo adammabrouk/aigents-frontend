@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { FaUserTie, FaCertificate, FaLock } from 'react-icons/fa'
+import { FaCertificate, FaLock } from 'react-icons/fa'
 
 export default function FounderMessage() {
   return (
