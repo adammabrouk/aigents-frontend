@@ -1,7 +1,9 @@
 import { Canvas } from '@react-three/fiber'
 import NodeSphere from '../three/NodeSphere'
 import { useState, useEffect } from 'react'
-import vapi from '@vapi-ai/web'
+import Vapi from '@vapi-ai/web'
+
+const vapi = new Vapi('7053bc2c-73a2-4261-aafb-7e02f7429a02');
 
 export default function HeroSection() {
   const [callActive, setCallActive] = useState(false)
@@ -9,7 +11,7 @@ export default function HeroSection() {
 
   const startCall = async () => {
     setCallActive(true)
-    const call = await vapi.start('your-assistant-id')
+    const call = await vapi.start('6a8784b6-e494-4772-beee-4df5a8c0a00d')
     vapi.on('volume-level', (volume) => {
       setVolumeLevel(volume)
     })
