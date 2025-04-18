@@ -11,7 +11,7 @@ export default function HeroSection() {
 
   const startCall = async () => {
     setCallActive(true)
-    const call = await vapi.start('6a8784b6-e494-4772-beee-4df5a8c0a00d')
+    await vapi.start('6a8784b6-e494-4772-beee-4df5a8c0a00d')
     vapi.on('volume-level', (volume) => {
       setVolumeLevel(volume)
     })
