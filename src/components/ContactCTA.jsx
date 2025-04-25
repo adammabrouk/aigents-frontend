@@ -18,7 +18,7 @@ export default function ContactCTA() {
             className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-black font-semibold rounded-xl shadow hover:drop-shadow-glow transition"
           >
             <FaPaperPlane />
-            Book a Meeting
+            Request a demo
           </a>
         </div>
       </div>

@@ -50,9 +50,7 @@ export default function HeroSection() {
       {!callActive && (
         <div className="relative z-10 w-full sm:w-1/2 max-w-xl text-center sm:text-left">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">
-            Multi-Agent Intelligence.
-            <br />
-            <span className="text-primary">Automated for Your Business.</span>
+            Enhance customer experience and security with voice and visual AI.
           </h1>
           <p className="text-gray-300 mb-8 text-lg">
             We replace outdated workflows with intelligent, real-time agents that adapt and evolve.
@@ -62,7 +60,7 @@ export default function HeroSection() {
               onClick={startCall}
               className="px-6 py-3 bg-primary rounded-xl text-black font-semibold shadow-md hover:drop-shadow-glow transition"
             >
-              Let’s Talk
+              Call us
             </button>
             <a
               href="https://calendly.com/mabrouk-adam/demo"
@@ -70,7 +68,7 @@ export default function HeroSection() {
               rel="noopener noreferrer"
               className="px-6 py-3 border border-white rounded-xl text-white hover:border-primary hover:text-primary transition"
             >
-              Plan a Demo
+              Request a demo
             </a>
           </div>
         </div>
