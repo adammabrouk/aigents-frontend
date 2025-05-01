@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion'
-import { FaHotel, FaShoppingCart, FaUtensils, FaClinicMedical, FaBus, FaCalendarAlt } from 'react-icons/fa'
+import { FaBuilding, FaShoppingCart, FaUtensils, FaClinicMedical, FaBus, FaCalendarAlt } from 'react-icons/fa'
 
 const applications = [
   {
-    title: 'Hotels',
-    description: 'In-room voice assistants, check-in kiosks.',
-    icon: <FaHotel size={36} />,
+    title: 'Real Estate Agencies',
+    description: 'Property listings, virtual tours, and client management.',
+    icon: <FaBuilding size={36} />,
   },
   {
     title: 'Shopping Centers',
